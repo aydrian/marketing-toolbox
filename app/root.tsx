@@ -3,10 +3,21 @@ import {
   Links,
   LiveReload,
   Meta,
+  type MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: 'Marketing Toolbox' },
+    {
+      name: 'description',
+      content: 'A bunch of tools to help with marketing tasks',
+    },
+  ]
+}
 
 export default function App() {
   return (

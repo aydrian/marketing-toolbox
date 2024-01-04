@@ -1,7 +1,5 @@
 export default {
-  semi: false,
-  singleQuote: true,
-  trailingComma: 'all',
+  trailingComma: 'none',
   arrowParens: 'avoid',
   plugins: ['prettier-plugin-tailwindcss'],
 }
